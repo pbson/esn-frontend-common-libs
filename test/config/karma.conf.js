@@ -7,7 +7,7 @@ module.exports = function(config) {
   // We need a timeout of at least 10000ms or else the tests will sometimes randomly
   // fail because they exceed the default 2000ms timeout. This will happen often in
   // the CI where the tests run slower than in our locals.
-  const timeout = process.env.TEST_TIMEOUT || 10000;
+  const timeout = process.env.TEST_TIMEOUT || 20000;
 
   config.set({
     mocha: {
